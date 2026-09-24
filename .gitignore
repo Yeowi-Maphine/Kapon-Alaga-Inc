@@ -1,0 +1,7 @@
+# OS cruft
+Thumbs.db
+.DS_Store
+
+# Tool-managed skill sync directories (auto-installed, not project content)
+.agents/
+.claude/
