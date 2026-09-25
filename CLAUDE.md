@@ -42,6 +42,10 @@ Single long page, sectioned with `<section id="...">` anchors linked from the si
 - Fonts are loaded from Google Fonts via `@import` in the `<style>` block: Fraunces (headings/serif), Karla (body), IBM Plex Mono (eyebrows/labels/mono accents).
 - Responsive/mobile nav is pure CSS: `#nav-toggle` (hidden checkbox) + `.burger` label + `.mobile-bar` / `.dropdown-menu` — no JS.
 
+## Subagents
+
+- `.claude/agents/content-editor.md` — handles copy/content edits (cat listings, adoption steps, event/volunteer descriptions, donation info, links text) in `circuit-community.html`. Scoped to text only — it does not touch CSS, layout, or base64 image data, and does not run git commands. `.claude/` is otherwise gitignored (tool-synced skill directories), but `.claude/agents/` is explicitly un-ignored so project subagents are tracked and backed up.
+
 ## Working with this file
 
 - Because it's one large file, use targeted greps/reads (e.g. by section `id`, class name, or line range) rather than reading it in full — most of its size is base64 image payloads.

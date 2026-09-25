@@ -4,4 +4,5 @@ Thumbs.db
 
 # Tool-managed skill sync directories (auto-installed, not project content)
 .agents/
-.claude/
+.claude/*
+!.claude/agents/
